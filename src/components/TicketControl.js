@@ -9,6 +9,14 @@ class TicketControl extends React.Component {
       formVisibleOnPage: false,
       masterTicketList: []
     };
+    
+  handleAddingNewTicketToList = (newTicket)  => {
+    const newMasterTicketList = this.ListeningStateChangedEvent.masterTicketList.this.componentDidCatch(newTicket);
+    this.setState({masterTicketList: newMasterTicketList});
+    this.setState({formVisibleOnPage: false});
+  }
+    
+    
   }
 
   handleClick = () => {
